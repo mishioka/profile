@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header>
+  <div class="container">
+  	<div class="header-left">
+		<%= image_tag("beer.png", :class => "logo")%>
+	</div>
+  </div>	
+
+  <div class="header-right">
+  	<a href="/hobby" class="login">趣味</a>
+  </div>
+ 
+  <div class="header-right">
+  	<a href="/job" class="login">仕事</a> 	
+  </div>
+
+  <div class="header-right">
+  	<a href="/profile" class="login">プロフィール</a>
+  </div>
+
+</header>
+
+<header>
+	<div class="container2">
+		<div class="header-left2">
+			<%= image_tag("beer.png", :class => "logo")%>
+		</div>
+	</div>
+
+
+	<div class="header-right">
+  		<a href="/hobby" class="login">趣味2</a>
+  	</div>
+
+  	<div class="header-right">
+  		<a href="/job" class="login">仕事2</a> 	
+  	</div>
+
+  	<div class="header-right">
+  		<a href="/profile" class="login">プロフィール2</a>
+  	</div>
+</header>
+
+<%= yield %>
+
+
+
+</body>
+</html>
